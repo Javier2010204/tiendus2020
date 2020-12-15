@@ -1,8 +1,8 @@
-.bg-gray-500.h-screen
-    .max-w-full.flex.items-center.justify-center
-        %h1.text-3xl.font-extrabold.mx-auto "un texto chingon"
-        .flex-shink-0
-            .inline-flex.rounded-md.shadow
-                =link_to 'un link', root_path, class:'inline-flex items-center'
-            .inline-flex.rounded-md.shadow
-                =link_to 'otro link', root_path, class:'inline-flex items-center'
+.flex.p-6
+    .flex-none.w-44.relative
+        =image_pack_tag "media/images/shopping.jpg", class:'absolute inset-0 w-full h-full object-cover rounded-lg'
+    %form.flex-auto.pl-6
+        .flex.flex-wrap.items-baseline
+            %h1.w-full.flex-none.font-semibold.mb-2.5 Bolsa Calavera
+            .text-4xl.leading-7.font-bold.text-purple-500
+                $99.9
