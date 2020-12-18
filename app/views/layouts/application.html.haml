@@ -1,12 +1,15 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{name:"viewport",content:"width=device-width,initial-scale:1,maximum-scale:1"}
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %link{rel:"preconnect",href:"https://fonts.gstatic.com"}
+    %link{href:"https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,700&display=swap",rel:"stylesheet"}
     %title Tiendus2020
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
+  %body.h-full
     = yield

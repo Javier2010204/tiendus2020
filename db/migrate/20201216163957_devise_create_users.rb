@@ -24,7 +24,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :address
       t.string :username
       t.integer :phone
-      t.boolean :admin
+      t.boolean :admin, default: false
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at
