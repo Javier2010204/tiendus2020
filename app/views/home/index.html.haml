@@ -1,26 +1,14 @@
 .py-20.bg-green-50
     .container.mx-auto
-        .flex.items-center.flex-wrap.mb-20
-            %div{class:"w-full md:w-1/2"}
-                %h1.logo-font.text-8xl.font-bold.text-center.text-green-500.mb-6 Logo
-                %p.text-gray-600.mb-8.text-lg.mt-3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate aut nobis beatae nostrum, commodi dolorem reprehenderit sed maiores explicabo doloribus omnis minima impedit quibusdam deserunt ab? Porro iusto beatae libero!
-                =link_to "Comprar", root_path
-            %div{class:"w-full md:w-1/2"}
-                .main-image
-                    =image_pack_tag "media/images/main.svg", class: 'main-image'
-%section.bg-blue-50
-    .container.mx-auto.px-6.py-20
-        %h2.text-4xl.font-bold.text-center.mb-4 Productos
-        .flex.flex-wrap
-            %div{class:'w-full md:w-1/3 px-2 mb-4 bg-white rounded-lg mr-2'}
-                .flex.p-6
-                    .flex-none.w-44.relative.bg-green-300.rounded-lg
-                        =image_pack_tag "bag.png", class: ''
-                    %form.flex-auto.pl-6
-                        .flex.flex-wrap.items-baseline
-                            %h1.w-full.flex-none.font-semibold.mb-2.5 Bolso Chanel
-                            .text-4xl.leading-7.font-bold.text-green-500 Q.500.00
-                            .text-sm.font-medium.text-gray-400.ml-3 Disponible
-                        .flex.space-x-3.mb-4.text-sm.font-semibold
-                            .flex-auto.flex.space-x-3
-                                =link_to "Comprar", root_path, class: 'w-full p-2 mt-2 flex items-center justify-center rounded-full bg-green-500 text-white'
+        .flex.flex-wrap.items-center
+            %div{class:'w-full md:w-1/2 px-4 mb-5'}
+                %h1.logo-font.text-8xl.text-green-500 Titulo
+                %p.text-xl.text-gray-600 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse sequi perspiciatis odio, blanditiis sint nostrum architecto magni quidem aperiam aut aliquam iste et, ipsum accusantium inventore tempora. Corrupti, cupiditate molestiae!
+            %div{class:'w-full md:w-1/2'}
+                =image_pack_tag "media/images/main.svg"
+.py-20.bg-blue-100
+    .container.mx-auto
+        %div{class:'grid grid-cols-1 md:grid-cols-3 gap-4 text-center p-2'}
+            .bg-gray-600 A
+            .bg-gray-600 A
+            .bg-gray-600 A

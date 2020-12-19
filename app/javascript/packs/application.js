@@ -19,3 +19,4 @@ import "stylesheets/application"
 // const imagePath = (name) => images(name, true)
 
 const images = require.context('../images', true);
+
