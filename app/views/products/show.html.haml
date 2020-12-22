@@ -22,6 +22,8 @@
   %b Code:
   = @product.code
 
+%p imagenes
+-@product.images.each do |image|
+  =image_tag(url_for(image))
 = link_to 'Edit', edit_product_path(@product)
-\|
 = link_to 'Back', products_path

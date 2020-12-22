@@ -27,5 +27,8 @@
   .field
     = f.label :code
     = f.text_field :code
+  .field
+    = f.label "Cover"
+    = f.file_field :images, multiple: true
   .actions
     = f.submit 'Save'
